@@ -60,11 +60,21 @@ const MainContent = () => {
 const Footer = () => {
   return (
     <footer className="bg-black text-white p-5">
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-5">
         {/* Add footer content here */}
-        <p className="text-center">
-          Copyright © 2024 Company Name. All Rights Reserved.
-        </p>
+        <div className="flex flex-row justify-between items-center">
+          <div className="flex flex-col space-y-2 w-1/3">
+            <div className="h-[3px] w-full bg-white"></div>
+            <div className="h-[3px] w-full bg-white"></div>
+          </div>
+          <p>
+            © 2024 <span className="font-bold">Aegis</span>
+          </p>
+          <div className="flex flex-col space-y-2 w-1/3">
+            <div className="h-[3px] w-full bg-white"></div>
+            <div className="h-[3px] w-full bg-white"></div>
+          </div>
+        </div>
       </div>
     </footer>
   );
