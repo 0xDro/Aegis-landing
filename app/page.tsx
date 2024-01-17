@@ -37,7 +37,23 @@ const MainContent = () => {
           <div className=" h-full flex flex-col">
             <div className="h-3/5 w-full flex flex-row ">
               {/* TOP LEFT */}
-              <div className="w-2/3 h-full border-r-[1px] border-b-[1px] border-black"></div>
+              <div className="w-2/3 h-full border-r-[1px] border-b-[1px] flex flex-col border-black pt-10 bg-[url('/background.png')]">
+                <div className="h-1/5 w-full text-black pl-10 flex items-center font-mono">
+                  <p className="text-6xl text font-semibold"> AEGIS </p>
+                </div>
+                <div className="flex gap-y-3 w-3/5 pl-10 flex-col justify-between">
+                  <div className="h-1 w-3/4 rounded-3xl bg-slate-700"></div>
+                  <div className="h-1 w-3/5 rounded-3xl bg-slate-500"></div>
+                  <div className="h-1 w-3/4 rounded-3xl bg-slate-700"></div>
+                  <div className="h-1 w-3/5 rounded-3xl bg-slate-500"></div>
+                </div>
+
+                <div className="h-[16%] w-[55%] flex bg-black flex-row justify-between items-center mt-10 rounded-r-[64px] px-5 tracking-widest">
+                  <div className="h-1/6 w-[3%] bg-black border-2 border-white rounded-full"></div>
+                  <p className="text-lg text-white font-mono"> The New Art</p>
+                  <div className="h-1/6 w-[3%] bg-black border-2 border-white rounded-full"></div>
+                </div>
+              </div>
               {/* TOP RIGHT */}
               <div className="w-1/3 h-full border-b-[1px] border-black"></div>
             </div>
