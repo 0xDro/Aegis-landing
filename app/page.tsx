@@ -26,7 +26,7 @@ const Header = () => {
 };
 const MainContent = () => {
   return (
-    <main className=" px-20">
+    <main className=" px-20 bg-black">
       <div className="container mx-auto">
         {/* Big rounded square */}
         <div
@@ -55,7 +55,31 @@ const MainContent = () => {
                 </div>
               </div>
               {/* TOP RIGHT */}
-              <div className="w-1/3 h-full border-b-[1px] border-black"></div>
+              <div className="w-1/3 h-full border-b-[1px] border-black bg-black flex flex-col justify-between items-center">
+                <div className="w-2/3 bg-slate-200">
+                  <p className="text-white text-5xl font-bold font-mono">
+                    Patrons of Art
+                  </p>
+                </div>
+
+                <div className="w-5/6 text-white mt-5 flex flex-col gap-y-2 bg-slate-400">
+                  <p className="font-light text-xs">
+                    Forget traditional commissions schemes, aegis turns digital
+                    art patronage into a comprehensive package
+                  </p>
+                  <p className="font-light text-xs">
+                    Patrons get to support daring artistic projects; in return,
+                    they get an exclusive insight into how the projects get
+                    produced.
+                  </p>
+                </div>
+
+                <div className="w-5/6 h-[1px] bg-white" />
+
+                <div className="flex flex-col justify-center items-center w-5/6 h-1/5 bg-slate-500">
+                  <div className="bg-white rounded-3xl w-3/4 h-3/4 mb-10"></div>
+                </div>
+              </div>
             </div>
 
             <div className="h-2/5 w-full flex flex-row ">
@@ -99,9 +123,11 @@ const Footer = () => {
 export default function Home() {
   return (
     <>
-      <Header />
-      <MainContent />
-      <Footer />
+      <div className="min-h-screen w-full bg-black">
+        <Header />
+        <MainContent />
+        <Footer />
+      </div>
     </>
   );
 }
