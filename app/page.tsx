@@ -50,34 +50,39 @@ const MainContent = () => {
 
                 <div className="h-[16%] w-[55%] flex bg-black flex-row justify-between items-center mt-10 rounded-r-[64px] px-5 tracking-widest">
                   <div className="h-1/6 w-[3%] bg-black border-2 border-white rounded-full"></div>
-                  <p className="text-lg text-white font-mono"> The New Art</p>
+                  <p className="text-lg text-white font-mono">
+                    {" "}
+                    The New Way of Art
+                  </p>
                   <div className="h-1/6 w-[3%] bg-black border-2 border-white rounded-full"></div>
                 </div>
               </div>
               {/* TOP RIGHT */}
-              <div className="w-1/3 h-full border-b-[1px] border-black bg-black flex flex-col justify-between items-center">
-                <div className="w-2/3 bg-slate-200">
-                  <p className="text-white text-5xl font-bold font-mono">
+              <div className="container w-1/3 h-full border-b-[1px] border-black bg-black flex flex-col justify-around items-center">
+                <div className="title-container w-2/3 my-4">
+                  <p className="title text-white text-5xl font-bold text-center font-mono">
                     Patrons of Art
                   </p>
                 </div>
 
-                <div className="w-5/6 text-white mt-5 flex flex-col gap-y-2 bg-slate-400">
-                  <p className="font-light text-xs">
+                <div className="description-container w-5/6 text-white mt-5 p-4 flex flex-col gap-y-2">
+                  <p className="description-text font-light text-xs text-center">
                     Forget traditional commissions schemes, aegis turns digital
                     art patronage into a comprehensive package
                   </p>
-                  <p className="font-light text-xs">
+                  <p className="description-text font-light text-xs text-center">
                     Patrons get to support daring artistic projects; in return,
                     they get an exclusive insight into how the projects get
                     produced.
                   </p>
                 </div>
 
-                <div className="w-5/6 h-[1px] bg-white" />
+                <div className="separator w-5/6 h-[1px] bg-white my-4"></div>
 
-                <div className="flex flex-col justify-center items-center w-5/6 h-1/5 bg-slate-500">
-                  <div className="bg-white rounded-3xl w-3/4 h-3/4 mb-10"></div>
+                <div className="footer-container flex flex-col justify-center items-center w-5/6 h-3/5  p-4">
+                  <p className="text-sm font-bold  mt-8">
+                    Be part of the revolution
+                  </p>
                 </div>
               </div>
             </div>
