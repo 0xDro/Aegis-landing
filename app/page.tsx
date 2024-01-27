@@ -89,11 +89,57 @@ const MainContent = () => {
 
             <div className="h-2/5 w-full flex flex-row ">
               {/* BOTTOM LEFT */}
-              <div className="w-1/3 h-full border-r-[1px] border-black"></div>
+              <div className="w-1/3 h-full border-r-[1px] flex flex-col border-black justify-between items-center p-4">
+                <p className="text-black font-mono text-2xl font-semibold">
+                  {" "}
+                  Our Mission{" "}
+                </p>
+
+                <p className="text-black font-mono text-lg text-center font-semibold">
+                  {" "}
+                  bringing structure to the patronage process
+                </p>
+                <div className="flex h-1/5 w-3/4 justify-center items-center">
+                  <div className=" h-full w-full rounded-3xl bg-black "></div>
+                </div>
+              </div>
+
               {/* BOTTOM MIDDLE */}
-              <div className="w-1/3 h-full border-r-[1px] border-black"></div>
+              <div className="w-1/3 h-full border-r-[1px] border-black ">
+                <div className="flex flex-col justify-between  h-full py-4 px-8">
+                  <div className="flex flex-row justify-between h-2/5 items-center ">
+                    <div className="h-full w-1/3 font-bold flex justify-center items-center text-black text-mono">
+                      Novel
+                    </div>
+                    <div className="h-full w-1/3 font-bold  flex justify-center items-center text-black text-mono">
+                      Flexible
+                    </div>
+                  </div>
+                  <div className="flex flex-row justify-between h-2/5 items-center">
+                    <div className="h-full w-1/3  font-bold  flex justify-center items-center text-black text-mono">
+                      Partnership
+                    </div>
+                    <div className="h-full w-1/3  font-bold  flex justify-center items-center text-black text-mono">
+                      Community
+                    </div>
+                  </div>
+
+                  <div className=" h-1/5 p-3 w-full rounded-3xl border border-black  text-black  justify-center flex items-center  flex-row ">
+                    <input
+                      className="w-full h-full bg-transparent outline-none items-center justify-center"
+                      placeholder="Sign up for updates"
+                    />
+                    <div className="w-1/5 rounded-full cursor-pointer text-black border border-black h-full flex justify-center items-center">
+                      <p className="text-black">{" > "}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* BOTTOM RIGHT */}
-              <div className="w-1/3 h-full "></div>
+              <div className="w-1/3 h-full">
+                <div className="flex flex-col  h-1/2 p-4"></div>
+              </div>
             </div>
           </div>
         </div>
