@@ -3,23 +3,8 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="bg-black text-white px-5 py-3">
-      <div className="container mx-auto flex justify-between items-center w-full">
+      <div className="flex justify-center items-center w-full">
         <Image src="/logo.png" alt="logo" width={60} height={60} />
-
-        <nav>
-          {/* Add your navigation items here */}
-          <ul className="flex space-x-10">
-            <li className="hover:cursor-pointer relative hover:after:content-[''] hover:after:block hover:after:w-0 hover:after:h-[1px] hover:after:bg-white hover:after:absolute hover:after:left-1/2 hover:after:-bottom-1 hover:after:transition-all hover:after:duration-300 hover:after:ease-out hover:hover:after:w-full hover:hover:after:left-0">
-              Our Mission
-            </li>
-            <li className="hover:cursor-pointer relative hover:after:content-[''] hover:after:block hover:after:w-0 hover:after:h-[1px] hover:after:bg-white hover:after:absolute hover:after:left-1/2 hover:after:-bottom-1 hover:after:transition-all hover:after:duration-300 hover:after:ease-out hover:hover:after:w-full hover:hover:after:left-0">
-              Become a Patron
-            </li>
-            <li className="hover:cursor-pointer relative hover:after:content-[''] hover:after:block hover:after:w-0 hover:after:h-[1px] hover:after:bg-white hover:after:absolute hover:after:left-1/2 hover:after:-bottom-1 hover:after:transition-all hover:after:duration-300 hover:after:ease-out hover:hover:after:w-full hover:hover:after:left-0">
-              Contact Us
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
   );
@@ -105,40 +90,24 @@ const MainContent = () => {
               </div>
 
               {/* BOTTOM MIDDLE */}
-              <div className="w-1/3 h-full border-r-[1px] border-black ">
+              <div className="w-2/3 h-full  ">
                 <div className="flex flex-col justify-between  h-full py-4 px-8">
-                  <div className="flex flex-row justify-between h-2/5 items-center ">
-                    <div className="h-full w-1/3 font-bold flex justify-center items-center text-black text-mono">
-                      Novel
-                    </div>
-                    <div className="h-full w-1/3 font-bold  flex justify-center items-center text-black text-mono">
-                      Flexible
-                    </div>
-                  </div>
-                  <div className="flex flex-row justify-between h-2/5 items-center">
-                    <div className="h-full w-1/3  font-bold  flex justify-center items-center text-black text-mono">
-                      Partnership
-                    </div>
-                    <div className="h-full w-1/3  font-bold  flex justify-center items-center text-black text-mono">
-                      Community
-                    </div>
+                  <div className="flex flex-row justify-between h-2/3 items-center ">
+                    <p className="text-3xl text-center font-bold">
+                      Don't miss out on Aegis! Sign up for updates
+                    </p>
                   </div>
 
                   <div className=" h-1/5 p-3 w-full rounded-3xl border border-black  text-black  justify-center flex items-center  flex-row ">
                     <input
-                      className="w-full h-full bg-transparent outline-none items-center justify-center"
-                      placeholder="Sign up for updates"
+                      className="w-full h-full bg-transparent outline-none items-center text-center justify-center"
+                      placeholder="Enter Email"
                     />
-                    <div className="w-1/5 rounded-full cursor-pointer text-black border border-black h-full flex justify-center items-center">
+                    <div className="w-1/5 rounded-full cursor-pointer text-black border border-black h-full flex justify-center items-center transition-colors duration-300 hover:bg-gray-300">
                       <p className="text-black">{" > "}</p>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* BOTTOM RIGHT */}
-              <div className="w-1/3 h-full">
-                <div className="flex flex-col  h-1/2 p-4"></div>
               </div>
             </div>
           </div>
